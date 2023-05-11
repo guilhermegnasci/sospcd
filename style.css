@@ -28,7 +28,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 12vh;
-    background: transparent;
+    background: #41B0E0;
 }
 
 nav .logo img {
@@ -38,6 +38,7 @@ nav .logo img {
 
 nav h1 {
     margin-left: -230px;
+    color: #fff;
 }
 
 .nav-list {
@@ -47,10 +48,12 @@ nav h1 {
 
 .nav-list .item {
     letter-spacing: 1px;
-    color: white;
     font-size: 15px;
     padding: 10px;
+    color: #fff;
+    
 }
+
 
 .nav-list a:hover {
     /* background-color: #49C8F5;
@@ -59,10 +62,12 @@ nav h1 {
     transition: all 0.5s;
     color: #fff; */
     /* padding: 10px; */
-    border-bottom: 3px solid #49C8F5;
+    border-bottom: 3px solid #f5f5f5;
     /* border-top: 2px solid #49C8F5; */
 
 }
+
+
 
 /*Estilização dos Botões no Site*/
 .botao-fonte {
@@ -70,13 +75,18 @@ nav h1 {
     border-radius: 20%;
     margin: 5px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: #49C8F5;
     float: right;
+    color: #fff;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    
 }
 
 .botao-fonte:hover {
     background-color: #49C8F5;
-    color: #fff;
+    color: black;
+
 
 }
 
@@ -126,6 +136,8 @@ main .container .esquerda h1 {
     flex-wrap: wrap;
     padding: 60px;
     box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .1);
+    background-color: #7749FC;
+    
 }
 
 .container-card .card {
@@ -138,6 +150,7 @@ main .container .esquerda h1 {
     width: 300px;
     height: 350px;
     padding: 20px;
+    background-color: white;
 }
 
 .card img {
@@ -241,6 +254,18 @@ main .container .esquerda h1 {
     color: #49C8F5;
 }
 
+.acessibilidade {
+    text-align: center;
+    font-size: 25px;
+    margin: 40px;
+}
+
+.acessibilidade h2 {
+    text-transform: uppercase;
+    padding: 20px;
+    border: 2px solid #49C8F5;
+}
+
 .texto-acessibilidade {
     display: flex;
     margin: 50px 100px;
@@ -262,12 +287,14 @@ main .container .esquerda h1 {
     text-align: center;
     font-size: 25px;
     margin: 40px;
+    background-color: #7749FC;
 }
 
 .dica h2 {
     text-transform: uppercase;
     padding: 20px;
-    border: 2px solid #49C8F5;
+    /* border: 2px solid #49C8F5; */
+    color: #fff;
 }
 
 .titulo {
@@ -303,8 +330,8 @@ main .container .esquerda h1 {
 
 .superficie .texto {
     width: 100%;
-    padding-left: 100px;
-    padding-top: 20px;
+    padding: 50px;
+    padding-top: 10px;
     padding-bottom: 20px;
 }
 
@@ -314,11 +341,74 @@ main .container .esquerda h1 {
     padding-top: 20px;
 }
 
+.fotosContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px;
+    padding-top: 30px;
+}
+
+.fotosContainer img{
+    max-width: 1000px;
+    
+    width: 100%;
+    height: 100%;
+    background-color: #7749FC;
+}
+
+.textoFoto{
+    padding-top: 40px;
+    margin-left: 100px;
+    font-size: 25px;
+}
+
+/* Estilização do Informações */
+
+.info{
+    margin: 50px;
+}
+
+.infoUL ul{
+    margin-left: 40px;
+}
+
+.infoTitle h2 {
+    text-align: center;
+    font-size: 25px;
+    margin: 25px;
+}
+
+.inf {
+    text-transform: uppercase;
+    padding: 20px;
+    border: 2px solid #49C8F5;
+}
+
+.dicaInf h3 {
+    text-align: center;
+    font-size: 25px;
+    margin: 40px;
+    background-color: #7749FC;
+}
+
+.dicaInfo {
+    text-transform: uppercase;
+    padding: 20px;
+    /* border: 2px solid #49C8F5; */
+    color: #fff;
+}
+
+
+
 /*Estilização do Quem somos*/
-.esquerda h2 {
+
+/* .esquerda h2 {
     font-size: 40px;
     padding-bottom: 10px;
-}
+    color: #fff;
+} */
 
 .container .direita-somos img {
     width: 350px;
@@ -327,23 +417,86 @@ main .container .esquerda h1 {
     margin: 50px;
 }
 
+.quemSomos {
+    text-align: center;
+    font-size: 25px;
+    margin: 40px;
+}
+
+.esquerda .quemSomos {
+    text-transform: uppercase;
+    padding: 20px;
+    border: 2px solid #49C8F5;
+}
+
 /*Estilização Deficiência*/
 
 .deficiencia {
     margin: 50px;
 }
 
+.deficiencia ul{
+    margin: 40px;
+}
+
+.listaDet{
+    margin: 40px;
+}
+
+.esquerdaDef h1 {
+    text-align: center;
+    font-size: 25px;
+    margin: 25px;
+}
+
+.defic {
+    text-transform: uppercase;
+    padding: 20px;
+    border: 2px solid #49C8F5;
+}
+.esquerdaDef{
+    margin: 50px;
+}
+
+
 /*Estilização do Contato*/
+
+.contactContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+   
+}
+
+.contactContainer div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    max-height: 1000px;
+    width: 100%;
+    height: 100%;
+}
+
+.contactContainer div img{
+    
+    max-width: 483px;
+    max-height: 483px;
+}
 
 #contact-form {
     margin-top: 50px;
     margin-bottom: 50px;
+    border: 3px solid;
+    
 }
 form {
     margin: 0 auto;
     max-width: 500px;
+    width: 100%;
     padding: 20px;
-    background-color: #fff;
+    background-color: #49C8F5;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -367,8 +520,24 @@ textarea {
 }
 
 button[type="submit"] {
-    background-color: #008080;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+button[type="reset"]:hover {
+    background-color: #7749FC;
     color: #fff;
+}
+
+button[type="reset"] {
+    background-color: white;
+    color: black;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -377,9 +546,14 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #006666;
+    background-color: #7749FC;
+    color: #fff;
 }
 
+.emailCont{
+    color: #fff;
+    font-size:medium
+}
 /* Estilos específicos para dispositivos móveis */
 @media only screen and (max-width: 500px) {
     form {
@@ -485,3 +659,4 @@ footer p {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
